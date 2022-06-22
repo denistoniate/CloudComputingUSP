@@ -191,7 +191,7 @@ void orionUpdateHumidity(String entityID, int humidity)
     client.println("Content-Type: text/plain");
     client.println("Content-Length: 2");
     client.println("");
-    client.println(humidity);
+    client.println(power);
     client.println("Connection: close");
     client.println(); // end HTTP header
 }
